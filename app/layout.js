@@ -19,7 +19,6 @@ const oswald = Oswald({
 
 export const metadata = {
   metadataBase: new URL("https://sachindesai.in/"),
-  // title: "Dev Blook - A blog for developers",
   title: {
     default: "Sachin Desai • Frontend Developer",
   },
@@ -33,6 +32,30 @@ export const metadata = {
     locale: "en_US",
     url: "https://sachindesai.in/",
     siteName: "sachindesai",
+    images: [
+      {
+        url: "https://sachindesai.in/sachindesai.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sachin Desai Portfolio",
+      },
+    ],
+    author: "Sachin Desai",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sachin Desai • Frontend Developer",
+    description:
+      "Empowering businesses with custom digital solutions. Based in Mumbai, India, I create bespoke designs and build engaging, fully interactive websites from the ground up. Developed by Sachin Desai",
+    images: [
+      {
+        url: "https://sachindesai.in/sachindesai.jpg",
+        alt: "Sachin Desai Portfolio",
+      },
+    ],
+    site: "@sachind3",
+    creator: "@sachind3",
+    creatorName: "Sachin Desai",
   },
 };
 

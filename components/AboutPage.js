@@ -241,7 +241,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 mt-8 lg:mt-16">
             <div className="lg:col-span-2">
               <div className="aboutImgContainer">
-                <div className="single-about-image">
+                <div className="single-about-image single-about-image2">
                   <div
                     className="overlayImg"
                     data-scroll

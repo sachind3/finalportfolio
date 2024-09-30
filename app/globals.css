@@ -458,3 +458,13 @@ body {
   background-position: 50% 50%;
   width: 100%;
 }
+.single-about-image2 .overlayImg  {
+  background: url('../images/user1.jpg') no-repeat;
+  background-size: 120%;
+  position: absolute;
+  left: 0;
+  top: -10vh;
+  height: 110%;
+  background-position: 50% 50%;
+  width: 100%;
+}

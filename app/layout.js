@@ -31,7 +31,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://sachindesai.in/",
-    siteName: "sachindesai",
+    siteName: "Sachin Desai",
     images: [
       {
         url: "https://sachindesai.in/sachindesai.jpg",
@@ -62,6 +62,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link rel="canonical" href="https://sachindesai.in" />
       <body
         className={`${roboto.variable} ${oswald.variable} antialiased`}
         suppressHydrationWarning

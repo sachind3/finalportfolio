@@ -194,7 +194,7 @@ const Footer = () => {
             <div className="text-center">
               <BtnLink
                 href="mailto:desai.sachin45@gmail.com"
-                text="VIEW ALL PROJECTS"
+                text="Connect now"
                 hoverColor="var(--btn-hover-color)"
                 textColor="var(--background)"
                 hoverTxtColor="#fff"

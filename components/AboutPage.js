@@ -46,22 +46,22 @@ const experienceData = [
   {
     id: 2,
     company: "Sol Communication Strategies Pvt. Ltd.",
-    year: 2023,
+    year: 2019,
   },
   {
     id: 3,
     company: "Netbiz Systems Pvt Ltd",
-    year: 2023,
+    year: 2018,
   },
   {
     id: 4,
     company: "Innovins Technologies",
-    year: 2023,
+    year: 2015,
   },
   {
     id: 5,
     company: "Affix Center",
-    year: 2023,
+    year: 2014,
   },
 ];
 const AboutPage = () => {
@@ -184,10 +184,13 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-5 gap-8">
             <div className="lg:col-span-2">
               <p className="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo neque totam labore nihil quis facere fuga libero nulla
-                laboriosam accusantium, error enim voluptatem, itaque nam
-                pariatur perferendis! Tempora, quae perspiciatis!
+                I&apos;m a passionate frontend developer with 9 years of
+                experience in web development. I began my career as a web
+                designer, and over the years, I&apos;ve honed my skills in
+                building responsive, user-friendly websites. Throughout my
+                journey, I&apos;ve worked with several companies, where I was
+                responsible for developing and delivering high-quality websites
+                that align with clients needs.
               </p>
               <p className="text-xl mt-4 opacity-45 content-small">
                 Always exploring...

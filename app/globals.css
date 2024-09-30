@@ -8,6 +8,7 @@
   --dark:#ffffff;
   --onetotwo: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   --section-padding:clamp(3.5rem, 0.1085rem + 14.4703vw, 14rem);
+  --section-lg-padding:clamp(6rem, 3.416rem + 11.025vw, 14rem);
   --footer-padding:clamp(2rem, 1.354rem + 2.7562vw, 4rem);
   --line-color: rgba(44, 44, 44, 0.08);
   --page-color-transition: background 0.2s ease, color 0.2s ease;

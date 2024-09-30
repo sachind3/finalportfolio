@@ -6,6 +6,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    fontFamily: {
+      oswald: ["var(--font-oswald)"],
+      roboto: ["var(--font-roboto)"],
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,4 +22,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };

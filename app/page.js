@@ -50,12 +50,15 @@ export default function Home() {
 
   useGSAP(
     () => {
+      const bodyHasLoadedClass = document.body.classList.contains("loaded");
+      const delayValue = bodyHasLoadedClass ? 0 : 2.5;
       const heroTl = gsap.timeline();
       heroTl
         .from(".blob-container", {
           opacity: 0,
           scale: 0,
           duration: 0.6,
+          delay: delayValue,
         })
         .from(".heroTitle span", {
           opacity: 0,
@@ -255,31 +258,58 @@ export default function Home() {
                 My expertise includes React.js, Next Js and modern web
                 technologies like Tailwind CSS and GSAP.
               </p>
-
-              <BtnLink
-                href="/about"
-                text="More about me"
-                hoverColor="var(--btn-hover-color)"
-                textColor="var(--foreground)"
-                hoverTxtColor="#fff"
-              >
-                <svg
-                  className="rotate-45 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              <div className="flex gap-4">
+                <BtnLink
+                  href="/about"
+                  text="More about me"
+                  hoverColor="var(--btn-hover-color)"
+                  textColor="var(--foreground)"
+                  hoverTxtColor="#fff"
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M17 7l-10 10"></path>
-                  <path d="M8 7l9 0l0 9"></path>
-                </svg>
-              </BtnLink>
+                  <svg
+                    className="rotate-45 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.25"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M17 7l-10 10"></path>
+                    <path d="M8 7l9 0l0 9"></path>
+                  </svg>
+                </BtnLink>
+                <BtnLink
+                  href="/sachin-01oct2024-updated-resume.pdf"
+                  target="_blank"
+                  referrerPolicy="no-referrer"
+                  text="Download Resume"
+                  hoverColor="var(--btn-hover-color)"
+                  textColor="var(--foreground)"
+                  hoverTxtColor="#fff"
+                >
+                  <svg
+                    className="rotate-45 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.25"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M17 7l-10 10"></path>
+                    <path d="M8 7l9 0l0 9"></path>
+                  </svg>
+                </BtnLink>
+              </div>
             </div>
           </div>
         </div>

@@ -7,6 +7,8 @@ import IMG1 from "@/images/work1.jpg";
 import IMG2 from "@/images/work2.jpg";
 import IMG3 from "@/images/work3.jpg";
 import IMG4 from "@/images/work4.jpg";
+import IMG5 from "@/images/work5.jpg";
+import IMG6 from "@/images/work6.jpg";
 
 const workList = [
   {
@@ -37,12 +39,28 @@ const workList = [
     img: IMG4,
     url: "https://quote-client.sachindesai.in/",
   },
+  {
+    id: 5,
+    title: "GCCPL",
+    type: "- Pharmaceutical",
+    img: IMG5,
+    url: "https://www.nationagainstpneumonia.com/",
+  },
+  {
+    id: 6,
+    title: "Neume",
+    type: "- Cosmetic e-commerce",
+    img: IMG6,
+    url: "https://neume.in/",
+  },
 ];
 
 const WorkPage = () => {
   const workRef = useRef();
   useGSAP(
     () => {
+      const bodyHasLoadedClass = document.body.classList.contains("loaded");
+      const delayValue = bodyHasLoadedClass ? 0 : 2.5;
       const workTimeline = gsap.timeline();
       workTimeline
         .from(".small-title span", {
@@ -51,6 +69,7 @@ const WorkPage = () => {
           y: "100%",
           duration: 0.6,
           ease: "power3",
+          delay: delayValue,
         })
         .from(
           ".big-title span",

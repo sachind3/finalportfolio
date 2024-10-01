@@ -6,6 +6,7 @@
   --background: #f8f8f8;
   --foreground: #212121;
   --dark:#ffffff;
+  --dark-foreground:#ffffff;
   --onetotwo: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   --section-padding:clamp(3.5rem, 0.1085rem + 14.4703vw, 14rem);
   --section-lg-padding:clamp(6rem, 3.416rem + 11.025vw, 14rem);
@@ -18,14 +19,16 @@
 }
 
 [data-theme="dark"] {
-    --background: #212121;
-    --foreground: #f8f8f8;
-    --dark:#121212;
+  --background: #212121;
+  --foreground: #f8f8f8;
+  --dark:#121212;
+  --dark-foreground:#ffffff;
     --line-color: rgba(248, 248, 248, 0.08);
     --btn-border-color: rgba(255, 255, 255, 0.2);
     --btn-hover-color: #334bd3;
     --btn-dark-border-color: rgba(0, 0, 0, 0.2);
 }
+
 #thememode {
   cursor: pointer;
   width: 30px;
@@ -142,6 +145,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  cursor: none;
 }
 
 @layer base {

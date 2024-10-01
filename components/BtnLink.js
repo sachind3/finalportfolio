@@ -12,6 +12,7 @@ const BtnLink = ({
   borderColor = "var(--btn-border-color)",
   children,
   className,
+  props,
 }) => {
   const btnRef = useRef();
 
@@ -61,6 +62,7 @@ const BtnLink = ({
       className={`btn ${className}`}
       ref={btnRef}
       style={{ color, borderColor: borderColor }}
+      {...props}
     >
       <div className="btn-fill" style={{ backgroundColor: hoverColor }}></div>
       <div

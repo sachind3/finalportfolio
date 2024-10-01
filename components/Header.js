@@ -14,6 +14,7 @@ const Header = () => {
         opacity: 0,
         y: -20,
         stagger: 0.1,
+        delay: 2.5,
       });
     },
     {

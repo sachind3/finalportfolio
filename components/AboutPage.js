@@ -69,6 +69,8 @@ const AboutPage = () => {
   const extraAboutRef = useRef();
   useGSAP(
     () => {
+      const bodyHasLoadedClass = document.body.classList.contains("loaded");
+      const delayValue = bodyHasLoadedClass ? 0 : 2.5;
       const aboutTimeline = gsap.timeline();
       aboutTimeline
         .from(".small-title span", {
@@ -77,6 +79,7 @@ const AboutPage = () => {
           y: "100%",
           duration: 0.6,
           ease: "power3",
+          delay: delayValue,
         })
         .from(
           ".big-title span",

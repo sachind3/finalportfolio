@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AppLayout from "@/components/AppLayout";
 import ScrollToTop from "@/components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -80,6 +81,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </AppLayout>
+        <Analytics />
       </body>
     </html>
   );

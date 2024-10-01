@@ -135,6 +135,7 @@ export default function Home() {
         y: "50%",
         duration: 0.6,
         ease: "power3",
+        stagger: 0.2,
         scrollTrigger: {
           trigger: ".btn",
           start: "clamp(top 60%)",
@@ -258,7 +259,7 @@ export default function Home() {
                 My expertise includes React.js, Next Js and modern web
                 technologies like Tailwind CSS and GSAP.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-col lg:flex-row items-start">
                 <BtnLink
                   href="/about"
                   text="More about me"

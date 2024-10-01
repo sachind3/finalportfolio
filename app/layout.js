@@ -64,10 +64,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <link rel="canonical" href="https://sachindesai.in" />
-      {/* <meta
+      <meta
         name="google-site-verification"
         content="EwD1tctBgW0wQUeEXzHYiWOy2PzumKAT4SHnMo4S6S8"
-      /> */}
+      />
       <body
         className={`${roboto.variable} ${oswald.variable} antialiased`}
         suppressHydrationWarning

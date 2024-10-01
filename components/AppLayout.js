@@ -90,6 +90,7 @@ const AppLayout = ({ children }) => {
         y: e.clientY - 4 / 2,
         duration: 0.2,
         ease: "power3.out",
+        opacity: 1,
       });
       gsap.to(cursorRefInner.current, {
         x: e.clientX - 20 / 2,
@@ -97,6 +98,7 @@ const AppLayout = ({ children }) => {
         duration: 0.3,
         ease: "power3.out",
         delay: 0.04,
+        opacity: 1,
       });
     };
 
@@ -127,11 +129,11 @@ const AppLayout = ({ children }) => {
           </div>
         </div>
         <div
-          className="cursor w-1 h-1 bg-[var(--dark-foreground)] rounded-full fixed mix-blend-exclusion"
+          className="cursor w-1 h-1 bg-[var(--dark-foreground)] rounded-full fixed mix-blend-exclusion opacity-0"
           ref={cursorRef}
         ></div>
         <div
-          className="cursor w-5 h-5 border border-[var(--dark-foreground)] rounded-full fixed mix-blend-exclusion"
+          className="cursor w-5 h-5 border border-[var(--dark-foreground)] rounded-full fixed mix-blend-exclusion opacity-0"
           ref={cursorRefInner}
         ></div>
         <div data-scroll-container ref={scrollRef}>
